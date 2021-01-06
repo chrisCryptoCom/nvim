@@ -90,6 +90,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'posva/vim-vue'
 
     Plug 'alvan/vim-closetag'
+    
+    " Debugger Plugins
+    Plug 'puremourning/vimspector'
+    Plug 'szw/vim-maximizer'
 
 " All of your Plugs must be added before the following line
 call plug#end()            " required
