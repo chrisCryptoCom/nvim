@@ -20,6 +20,7 @@ let configFiles = [
     \'plug-config/vim-grepper.vim',
     \'plug-config/quick-scope.vim',
     \'plug-config/vim-closetag.vim',
+    \'plug-config/vimspector.vim',
     \]
 
 for f in configFiles
