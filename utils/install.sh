@@ -62,12 +62,12 @@ installcocextensions() { \
   [ ! -f package.json ] && echo '{"dependencies":{}}'> package.json
   # Change extension names to the extensions you need
   # sudo npm install coc-explorer coc-snippets coc-json coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-  sudo npm install coc-explorer coc-snippets coc-json coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+  sudo npm install coc-snippets coc-pairs coc-eslint coc-tsserver coc-python coc-prettier coc-html coc-css coc-json coc-vetur --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
 cloneconfig() { \
-  echo "Cloning Nvim Mach 2 configuration"
-  git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
+  echo "Cloning Christians configuration"
+  git clone https://github.com/ckoopmann/nvim.git ~/.config/nvim
 }
 
 moveoldnvim() { \

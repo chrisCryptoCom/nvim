@@ -15,6 +15,7 @@ let configFiles = [
     \'plug-config/vim-tmux-navigator.vim',
     \'plug-config/vim-tmux-runner.vim',
     \'plug-config/coc/coc.vim',
+    \'plug-config/coc/coc-extensions.vim',
     \'plug-config/fzf.vim',
     \'plug-config/vim-grepper.vim',
     \'plug-config/quick-scope.vim',
