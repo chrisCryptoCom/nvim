@@ -144,8 +144,8 @@ which pip3 > /dev/null && echo "pip installed, moving on..." || asktoinstallpip
 which node > /dev/null && echo "node installed, moving on..." || asktoinstallnode
 
 
-# install pynvim
-pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
+# # install pynvim
+# pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
 
 # move old nvim directory if it exists
 [ -d "$HOME/.config/nvim" ] && moveoldnvim
