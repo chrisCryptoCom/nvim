@@ -1,6 +1,27 @@
 {
-    "python.jediEnabled": true,
-    "python.linting.pylintEnabled": false,
-    "java_home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
-    "suggest.autoTrigger": "none"
+  "python.jediEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "java_home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
+  "suggest.autoTrigger": "none",
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "clang": {
+          "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0",
+          "extraArgs": [
+            "-isystem",
+            "/Library/Developer/CommandLineTools/usr/include/c++/v1",
+            "-I",
+            "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
+          ]
+        }
+      }
+    }
+  }
 }

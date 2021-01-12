@@ -21,6 +21,7 @@ let configFiles = [
     \'plug-config/quick-scope.vim',
     \'plug-config/vim-closetag.vim',
     \'plug-config/vimspector.vim',
+    \'plug-config/vim-clang-format.vim',
     \]
 
 for f in configFiles

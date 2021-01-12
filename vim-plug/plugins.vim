@@ -94,6 +94,9 @@ call plug#begin('~/.vim/plugged')
     " Debugger Plugins
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
+    
+    " Clang Formatting of c++
+    Plug 'rhysd/vim-clang-format'
 
 " All of your Plugs must be added before the following line
 call plug#end()            " required
