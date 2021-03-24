@@ -98,6 +98,10 @@ call plug#begin('~/.vim/plugged')
     " Clang Formatting of c++
     Plug 'rhysd/vim-clang-format'
 
+    " Black code refactoring
+    Plug 'psf/black'
+
+
 " All of your Plugs must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
