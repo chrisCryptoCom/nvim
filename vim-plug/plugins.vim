@@ -100,6 +100,9 @@ call plug#begin('~/.vim/plugged')
 
     " Black code refactoring
     Plug 'psf/black'
+   
+    " Solidity syntax highlighting
+    Plug 'tomlion/vim-solidity'
 
 
 " All of your Plugs must be added before the following line
