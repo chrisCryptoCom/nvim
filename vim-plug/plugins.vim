@@ -104,6 +104,9 @@ call plug#begin('~/.vim/plugged')
     " Solidity syntax highlighting
     Plug 'tomlion/vim-solidity'
 
+    " Emmet for easier html 
+    Plug 'mattn/emmet-vim'
+
 
 " All of your Plugs must be added before the following line
 call plug#end()            " required
