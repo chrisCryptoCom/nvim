@@ -14,7 +14,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
     " let Vundle manage Vundle, required
     Plug 'VundleVim/Vundle.vim'
-
     "Git wrapping
     Plug 'tpope/vim-fugitive'
     Plug 'vim-airline/vim-airline'
@@ -106,6 +105,12 @@ call plug#begin('~/.vim/plugged')
 
     " Emmet for easier html 
     Plug 'mattn/emmet-vim'
+
+    " React Support
+    Plug 'pangloss/vim-javascript'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 
 " All of your Plugs must be added before the following line
