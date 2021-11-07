@@ -10,6 +10,7 @@ let configFiles = [
     \'general/shortcuts.vim',
     \'general/functions.vim',
     \'plug-config/nvim-lspconfig.vim',
+    \'plug-config/nvim-compe.vim',
     \'plug-config/nerdtree.vim',
     \'plug-config/vim-airline.vim',
     \'plug-config/jedi-vim.vim',
