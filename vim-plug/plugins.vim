@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
 
     " LSP
     Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim'
 
     " Seamless navigation with tmux
     Plug 'christoomey/vim-tmux-navigator'
