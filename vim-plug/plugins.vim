@@ -18,6 +18,9 @@ call plug#begin('~/.vim/plugged')
     " Some helpful shortcuts 
     Plug 'tpope/vim-unimpaired'
 
+    " LSP
+    Plug 'neovim/nvim-lspconfig'
+
     " Seamless navigation with tmux
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'christoomey/vim-tmux-runner'
