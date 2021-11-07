@@ -12,8 +12,7 @@ call plug#begin('~/.vim/plugged')
     "call vundle#begin('~/some/path/here')
 
     Plug 'morhetz/gruvbox'
-    " let Vundle manage Vundle, required
-    Plug 'VundleVim/Vundle.vim'
+
     "Git wrapping
     Plug 'tpope/vim-fugitive'
     Plug 'vim-airline/vim-airline'
