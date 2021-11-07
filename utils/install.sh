@@ -55,16 +55,6 @@ installpynvim() { \
   pip3 install pynvim --user
 }
 
-installcocextensions() { \
-  # Install extensions
-  mkdir -p ~/.config/coc/extensions
-  cd ~/.config/coc/extensions
-  [ ! -f package.json ] && echo '{"dependencies":{}}'> package.json
-  # Change extension names to the extensions you need
-  # sudo npm install coc-explorer coc-snippets coc-json coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-  sudo npm install coc-snippets coc-pairs coc-eslint coc-tsserver coc-python coc-prettier coc-html coc-css coc-json coc-vetur --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-}
-
 cloneconfig() { \
   echo "Cloning Christians configuration"
   git clone https://github.com/ckoopmann/nvim.git ~/.config/nvim
@@ -73,11 +63,6 @@ cloneconfig() { \
 moveoldnvim() { \
   echo "Moving your config to nvim.old"
   mv $HOME/.config/nvim $HOME/.config/nvim.old
-}
-
-moveoldcoc() { \
-  echo "Moving your coc to coc.old"
-  mv $HOME/.config/coc $HOME/.config/coc.old
 }
 
 installplugins() { \
@@ -93,7 +78,7 @@ asktoinstallnode() { \
   echo "node not found"
   echo -n "Would you like to install node now (y/n)? "
   read answer
-  [ "$answer" != "${answer#[Yy]}" ] && installnode && installcocextensions
+  [ "$answer" != "${answer#[Yy]}" ] && installnode
 }
 
 asktoinstallpip() { \
@@ -150,9 +135,6 @@ which node > /dev/null && echo "node installed, moving on..." || asktoinstallnod
 # move old nvim directory if it exists
 [ -d "$HOME/.config/nvim" ] && moveoldnvim
 
-# move old nvim directory if it exists
-[ -d "$HOME/.config/coc" ] && moveoldcoc
-
 # clone config down
 cloneconfig
 
@@ -164,7 +146,6 @@ cloneconfig
 # install plugins
 which nvim > /dev/null && installplugins
 
-installcocextensions
 
 echo "I recommend you also install and activate a font from here: https://github.com/ryanoasis/nerd-fonts"
 
