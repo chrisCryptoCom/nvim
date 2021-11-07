@@ -8,6 +8,4 @@ nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
-lua << EOF
-require'lspconfig'.tsserver.setup{}
-EOF
+lua require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
