@@ -14,6 +14,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    
+    " Prettier
+    Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
     " Some helpful shortcuts 
     Plug 'tpope/vim-unimpaired'
