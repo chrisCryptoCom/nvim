@@ -115,6 +115,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'peitalin/vim-jsx-typescript'
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
+    " Graphql support
+    Plug 'jparise/vim-graphql'
+
 
 " All of your Plugs must be added before the following line
 call plug#end()            " required
