@@ -118,6 +118,9 @@ call plug#begin('~/.vim/plugged')
     " Graphql support
     Plug 'jparise/vim-graphql'
 
+    " Graphql support
+    Plug 'github/copilot.vim'
+
 
 " All of your Plugs must be added before the following line
 call plug#end()            " required
